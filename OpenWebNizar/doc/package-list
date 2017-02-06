@@ -1,0 +1,6 @@
+com.nizar.openweb
+com.nizar.openweb.model
+com.nizar.openweb.repository
+com.nizar.openweb.service
+com.nizar.openweb.validator
+com.nizar.openweb.web

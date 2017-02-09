@@ -1,0 +1,1 @@
+CREATE TABLE user (id INT PRIMARY KEY, username VARCHAR(15) NOT NULL, password VARCHAR(15), passwordConfirm VARCHAR(15) NOT NULL);

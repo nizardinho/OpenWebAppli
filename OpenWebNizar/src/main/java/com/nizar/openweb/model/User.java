@@ -57,7 +57,11 @@ public class User {
         this.passwordConfirm = passwordConfirm;
     }
 
-    @ManyToMany
+    @ManyToMany // Table user_role représentant l’association -- clé étrangère
+                // pour
+                // la classe courante "User"
+                // -- clé étrangère vers la tablereprésentant l’autre entité
+                // Role
     @JoinTable( name = "user_role", joinColumns = @JoinColumn( name = "user_id" ), inverseJoinColumns = @JoinColumn( name = "role_id" ) )
     public Set<Role> getRoles() {
         return roles;

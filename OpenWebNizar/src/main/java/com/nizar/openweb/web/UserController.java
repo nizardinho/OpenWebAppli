@@ -42,8 +42,9 @@ public class UserController {
     @RequestMapping( value = "/registration", method = RequestMethod.POST )
     public String registration( @ModelAttribute( "userForm" ) User userForm, BindingResult bindingResult,
             Model model ) {
+        // validation du formulaire
         userValidator.validate( userForm, bindingResult );
-
+        // Si erreur on retourne au formulaire
         if ( bindingResult.hasErrors() ) {
             return "registration";
         }
